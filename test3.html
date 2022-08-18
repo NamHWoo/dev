@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <style>
+      .bg { background-color: #eeeeee; }
+      .bd { border: 1px solid #666666; }
+    </style>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        function removeClassTest() {
+            console.log('remove class');
+            $('h1').removeClass('bg');
+            $('h2').removeClass('bg bd');
+        }
+
+      $( document ).ready( function() {
+        // $( 'h1' ).removeClass( 'bg' );
+        // $( 'h2' ).removeClass( 'bg bd' );
+      });
+
+    </script>
+  </head>
+  <body>
+    <h1 class="bg bd">Lorem ipsum dolor.</h1>
+    <h2 class="bg bd">Lorem ipsum dolor.</h2>
+    <button type="button" onclick="removeClassTest()">클릭</button>
+  </body>
+</html>
